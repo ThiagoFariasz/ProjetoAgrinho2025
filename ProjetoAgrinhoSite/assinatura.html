@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinatura Rural</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Assinatura Rural - Cesta Recorrente</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Feirinha</a></li>
+        <li><a href="produtos.html">MiniMercado</a></li>
+        <li><a href="cesta.html">Agendar Cesta</a></li>
+        <li><a href="produtores.html">Quem Produz</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Escolha seu plano de assinatura</h2>
+    <div class="planos-grid">
+      <div class="plano">
+        <h3>Plano Mensal</h3>
+        <p>1 cesta grande por mês com frutas, verduras e laticínios frescos.</p>
+        <button onclick="assinar('Plano Mensal')">Assinar</button>
+      </div>
+      <div class="plano">
+        <h3>Plano Quinzenal</h3>
+        <p>2 cestas médias por mês. Ideal para casais e pequenas famílias.</p>
+        <button onclick="assinar('Plano Quinzenal')">Assinar</button>
+      </div>
+      <div class="plano">
+        <h3>Plano Semanal</h3>
+        <p>4 cestas pequenas por mês com variedade garantida toda semana.</p>
+        <button onclick="assinar('Plano Semanal')">Assinar</button>
+      </div>
+    </div>
+
+    <div id="mensagemAssinatura" style="margin-top: 20px;"></div>
+  </main>
+
+  <footer>
+    <p>Projeto Agrinho 2025 - Clube do Campo</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agende sua Cesta do Campo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Agende sua Cesta do Campo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Feirinha</a></li>
+        <li><a href="produtos.html">MiniMercado</a></li>
+        <li><a href="assinatura.html">Assinatura</a></li>
+        <li><a href="produtores.html">Quem Produz</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Monte sua cesta personalizada</h2>
+
+    <form id="formCesta" onsubmit="enviarCesta(event)">
+      <fieldset>
+        <legend>Escolha seus produtos:</legend>
+        <label><input type="checkbox" name="produtos" value="Maçã"> Maçã</label><br>
+        <label><input type="checkbox" name="produtos" value="Alface"> Alface</label><br>
+        <label><input type="checkbox" name="produtos" value="Queijo Colonial"> Queijo Colonial</label><br>
+        <label><input type="checkbox" name="produtos" value="Banana"> Banana</label><br>
+        <label><input type="checkbox" name="produtos" value="Tomate"> Tomate</label><br>
+        <label><input type="checkbox" name="produtos" value="Leite"> Leite</label><br>
+        <label><input type="checkbox" name="produtos" value="Geleia Artesanal"> Geleia Artesanal</label><br>
+      </fieldset>
+
+      <br>
+
+      <label for="dataEntrega"><strong>Escolha a data da entrega:</strong></label><br>
+      <input type="date" id="dataEntrega" required><br><br>
+
+      <button type="submit">Agendar Cesta</button>
+    </form>
+
+    <div id="confirmacao" style="margin-top: 20px;"></div>
+  </main>
+
+  <footer>
+    <p>Projeto Agrinho 2025 - Cesta do Campo</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
