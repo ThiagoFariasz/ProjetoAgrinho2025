@@ -66,3 +66,31 @@ footer {
   color: white;
   margin-top: 2rem;
 }
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.produto {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #fafafa;
+}
+
+.produto button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.produto button:hover {
+  background-color: #388E3C;
+}
