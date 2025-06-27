@@ -135,3 +135,75 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fadeItems.forEach(item => observer.observe(item));
 });
+
+// script.js
+
+// --- Animação fade-in ao rolar a página ---
+function fadeInOnScroll() {
+  const elements = document.querySelectorAll('.fade-in');
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      el.style.animationPlayState = 'running';
+    }
+  });
+}
+
+window.addEventListener('scroll', fadeInOnScroll);
+window.addEventListener('load', fadeInOnScroll);
+
+// --- Carrinho simples: adiciona e remove itens ---
+const cart = new Set();
+
+function addToCart(itemId) {
+  if (cart.has(itemId)) {
+    alert('Este produto já está no carrinho.');
+    return;
+  }
+  cart.add(itemId);
+  updateCartUI();
+}
+
+function removeFromCart(itemId) {
+  cart.delete(itemId);
+  updateCartUI();
+}
+
+function updateCartUI() {
+  const cartList = document.getElementById('cart-list');
+  if (!cartList) return;
+  cartList.innerHTML = '';
+  cart.forEach(id => {
+    const li = document.createElement('li');
+    li.textContent = id;
+
+    const btnRemove = document.createElement('button');
+    btnRemove.textContent = 'Remover';
+    btnRemove.onclick = () => removeFromCart(id);
+
+    li.appendChild(btnRemove);
+    cartList.appendChild(li);
+  });
+}
+
+// --- Validação simples do formulário de contato ---
+function validarFormulario(event) {
+  event.preventDefault();
+  
+  const nome = document.getElementById('nome').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const mensagem = document.getElementById('mensagem').value.trim();
+
+  if (!nome || !email || !mensagem) {
+    alert('Por favor, preencha todos os campos.');
+    return;
+  }
+
+  alert('Mensagem enviada com sucesso! Obrigado por entrar em contato.');
+  document.getElementById('form-contato').reset();
+}
+
+const formContato = document.getElementById('form-contato');
+if (formContato) {
+  formContato.addEventListener('submit', validarFormulario);
+}
