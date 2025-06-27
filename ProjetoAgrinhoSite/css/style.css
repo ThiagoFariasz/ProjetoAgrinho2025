@@ -205,3 +205,56 @@ form button {
 form button:hover {
   background-color: #2e7d32;
 }
+
+/* Animação em todos os cartões */
+.card-produtor,
+.plano,
+.card-produto,
+.card-cesta {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-produtor:hover,
+.plano:hover,
+.card-produto:hover,
+.card-cesta:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  background-color: #e8f5e9;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+}
