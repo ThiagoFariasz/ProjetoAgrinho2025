@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feirinha Virtual - Campo e Cidade</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <h1>Projeto Agrinho 2025</h1>
-    <h2>Hortas</h2>
-    <img src="img/horta.jpg" alt="horta">
+  <header>
+    <h1>🌽 Feirinha Virtual: Conectando o Campo à Cidade</h1>
+    <nav>
+      <ul>
+        <li><a href="produtos.html">MiniMercado</a></li>
+        <li><a href="cesta.html">Agendar Cesta</a></li>
+        <li><a href="assinatura.html">Assinatura Rural</a></li>
+        <li><a href="produtores.html">Quem Produz</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="feirinha">
+    <h2>Escolha uma barraca para começar</h2>
+    <div class="barracas">
+      <div class="barraca" onclick="location.href='produtos.html'">
+        <img src="img/frutas.png" alt="Frutas e Verduras" />
+        <p>Frutas & Hortaliças</p>
+      </div>
+      <div class="barraca" onclick="location.href='cesta.html'">
+        <img src="img/cesta.png" alt="Agendar Cesta" />
+        <p>Agendar Cesta</p>
+      </div>
+      <div class="barraca" onclick="location.href='assinatura.html'">
+        <img src="img/assinatura.png" alt="Assinatura" />
+        <p>Assinatura Rural</p>
+      </div>
+      <div class="barraca" onclick="location.href='produtores.html'">
+        <img src="img/produtor.png" alt="Quem Produz" />
+        <p>Conheça os Produtores</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Projeto Agrinho 2025 - Festejando a relação do campo e cidade</p>
+  </footer>
 </body>
 </html>
