@@ -1,19 +1,18 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agende sua Cesta do Campo</title>
+  <title>Agendar Cesta</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Agende sua Cesta do Campo</h1>
+    <h1>Monte sua Cesta</h1>
     <nav>
       <ul>
         <li><a href="index.html">Feirinha</a></li>
         <li><a href="produtos.html">MiniMercado</a></li>
+        <li><a href="cesta.html">Agendar Cesta</a></li>
         <li><a href="assinatura.html">Assinatura</a></li>
         <li><a href="produtores.html">Quem Produz</a></li>
         <li><a href="contato.html">Contato</a></li>
@@ -22,35 +21,23 @@
   </header>
 
   <main>
-    <h2>Monte sua cesta personalizada</h2>
-
-    <form id="formCesta" onsubmit="enviarCesta(event)">
-      <fieldset>
-        <legend>Escolha seus produtos:</legend>
-        <label><input type="checkbox" name="produtos" value="Maçã"> Maçã</label><br>
-        <label><input type="checkbox" name="produtos" value="Alface"> Alface</label><br>
-        <label><input type="checkbox" name="produtos" value="Queijo Colonial"> Queijo Colonial</label><br>
-        <label><input type="checkbox" name="produtos" value="Banana"> Banana</label><br>
-        <label><input type="checkbox" name="produtos" value="Tomate"> Tomate</label><br>
-        <label><input type="checkbox" name="produtos" value="Leite"> Leite</label><br>
-        <label><input type="checkbox" name="produtos" value="Geleia Artesanal"> Geleia Artesanal</label><br>
-      </fieldset>
-
-      <br>
-
-      <label for="dataEntrega"><strong>Escolha a data da entrega:</strong></label><br>
-      <input type="date" id="dataEntrega" required><br><br>
-
-      <button type="submit">Agendar Cesta</button>
-    </form>
-
-    <div id="confirmacao" style="margin-top: 20px;"></div>
+    <section class="cestas">
+      <div class="card-cesta fade-in">
+        <img src="img/cesta1.jpg" alt="Cesta da Semana">
+        <h3>Cesta da Semana</h3>
+        <p>Monte sua cesta com até 5 produtos frescos.</p>
+      </div>
+      <div class="card-cesta fade-in">
+        <img src="img/cesta2.jpg" alt="Cesta Orgânica">
+        <h3>Cesta Orgânica</h3>
+        <p>Produtos 100% sem agrotóxicos.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>Projeto Agrinho 2025 - Cesta do Campo</p>
+    <p>Agende e receba no conforto de casa</p>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
 </html>

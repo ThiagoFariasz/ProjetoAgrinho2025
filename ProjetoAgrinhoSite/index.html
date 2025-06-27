@@ -1,50 +1,49 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feirinha Virtual - Campo e Cidade</title>
+  <title>Feirinha Rural</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>🌽 Feirinha Virtual: Conectando o Campo à Cidade</h1>
+    <h1>Feirinha Rural</h1>
     <nav>
       <ul>
+        <li><a href="index.html">Feirinha</a></li>
         <li><a href="produtos.html">MiniMercado</a></li>
         <li><a href="cesta.html">Agendar Cesta</a></li>
-        <li><a href="assinatura.html">Assinatura Rural</a></li>
+        <li><a href="assinatura.html">Assinatura</a></li>
         <li><a href="produtores.html">Quem Produz</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="feirinha">
-    <h2>Escolha uma barraca para começar</h2>
-    <div class="barracas">
-      <div class="barraca" onclick="location.href='produtos.html'">
-        <img src="img/frutas.png" alt="Frutas e Verduras" />
-        <p>Frutas & Hortaliças</p>
+  <main>
+    <section class="produtos">
+      <div class="card-produto fade-in">
+        <img src="img/alface.jpg" alt="Alface Orgânica">
+        <h3>Alface Orgânica</h3>
+        <p>R$ 3,00 / unidade</p>
       </div>
-      <div class="barraca" onclick="location.href='cesta.html'">
-        <img src="img/cesta.png" alt="Agendar Cesta" />
-        <p>Agendar Cesta</p>
+      <div class="card-produto fade-in">
+        <img src="img/tomate.jpg" alt="Tomate Caipira">
+        <h3>Tomate Caipira</h3>
+        <p>R$ 4,00 / kg</p>
       </div>
-      <div class="barraca" onclick="location.href='assinatura.html'">
-        <img src="img/assinatura.png" alt="Assinatura" />
-        <p>Assinatura Rural</p>
+      <div class="card-produto fade-in">
+        <img src="img/ovo.jpg" alt="Ovos Caipiras">
+        <h3>Ovos Caipiras (dúzia)</h3>
+        <p>R$ 6,00 / dúzia</p>
       </div>
-      <div class="barraca" onclick="location.href='produtores.html'">
-        <img src="img/produtor.png" alt="Quem Produz" />
-        <p>Conheça os Produtores</p>
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer>
-    <p>Projeto Agrinho 2025 - Festejando a relação do campo e cidade</p>
+    <p>Projeto Agrinho 2025 - Campo e Cidade Unidos</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,11 +1,9 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MiniMercado Rural</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniMercado</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -13,6 +11,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Feirinha</a></li>
+        <li><a href="produtos.html">MiniMercado</a></li>
         <li><a href="cesta.html">Agendar Cesta</a></li>
         <li><a href="assinatura.html">Assinatura</a></li>
         <li><a href="produtores.html">Quem Produz</a></li>
@@ -22,30 +21,28 @@
   </header>
 
   <main>
-    <h2>Produtos disponíveis</h2>
-
-    <div>
-      <label for="filtro">Filtrar por categoria:</label>
-      <select id="filtro" onchange="filtrarProdutos()">
-        <option value="todos">Todos</option>
-        <option value="frutas">Frutas</option>
-        <option value="hortaliças">Hortaliças</option>
-        <option value="laticínios">Laticínios</option>
-        <option value="outros">Outros</option>
-      </select>
-    </div>
-
-    <div id="produtos" class="produtos-grid"></div>
-
-    <h3>Carrinho de Compras 🛒</h3>
-    <ul id="carrinho"></ul>
-    <button onclick="limparCarrinho()">Limpar Carrinho</button>
+    <section class="produtos">
+      <div class="card-produto fade-in">
+        <img src="img/queijo.jpg" alt="Queijo Artesanal">
+        <h3>Queijo Artesanal</h3>
+        <p>R$ 15,00 / peça</p>
+      </div>
+      <div class="card-produto fade-in">
+        <img src="img/mel.jpg" alt="Mel Puro">
+        <h3>Mel Puro</h3>
+        <p>R$ 12,00 / pote</p>
+      </div>
+      <div class="card-produto fade-in">
+        <img src="img/pao.jpg" alt="Pão Caseiro">
+        <h3>Pão Caseiro</h3>
+        <p>R$ 5,00 / unidade</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>Projeto Agrinho 2025 - MiniMercado do Campo</p>
+    <p>MiniMercado direto do campo para você</p>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,20 +1,19 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assinatura Rural</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Assinatura Rural - Cesta Recorrente</h1>
+    <h1>Planos de Assinatura</h1>
     <nav>
       <ul>
         <li><a href="index.html">Feirinha</a></li>
         <li><a href="produtos.html">MiniMercado</a></li>
         <li><a href="cesta.html">Agendar Cesta</a></li>
+        <li><a href="assinatura.html">Assinatura</a></li>
         <li><a href="produtores.html">Quem Produz</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
@@ -22,32 +21,28 @@
   </header>
 
   <main>
-    <h2>Escolha seu plano de assinatura</h2>
-    <div class="planos-grid">
-      <div class="plano">
-        <h3>Plano Mensal</h3>
-        <p>1 cesta grande por mês com frutas, verduras e laticínios frescos.</p>
-        <button onclick="assinar('Plano Mensal')">Assinar</button>
+    <section class="planos">
+      <div class="plano fade-in">
+        <h3>Plano Básico</h3>
+        <p>1 cesta/mês - R$ 40,00</p>
+        <button>Assinar</button>
       </div>
-      <div class="plano">
-        <h3>Plano Quinzenal</h3>
-        <p>2 cestas médias por mês. Ideal para casais e pequenas famílias.</p>
-        <button onclick="assinar('Plano Quinzenal')">Assinar</button>
+      <div class="plano fade-in">
+        <h3>Plano Família</h3>
+        <p>2 cestas/mês - R$ 75,00</p>
+        <button>Assinar</button>
       </div>
-      <div class="plano">
-        <h3>Plano Semanal</h3>
-        <p>4 cestas pequenas por mês com variedade garantida toda semana.</p>
-        <button onclick="assinar('Plano Semanal')">Assinar</button>
+      <div class="plano fade-in">
+        <h3>Plano Completo</h3>
+        <p>4 cestas/mês - R$ 140,00</p>
+        <button>Assinar</button>
       </div>
-    </div>
-
-    <div id="mensagemAssinatura" style="margin-top: 20px;"></div>
+    </section>
   </main>
 
   <footer>
-    <p>Projeto Agrinho 2025 - Clube do Campo</p>
+    <p>Receba o melhor do campo regularmente</p>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
 </html>
